@@ -19,7 +19,7 @@ let phi = 0,
 
 const textureLoader = new THREE.TextureLoader();
 
-textureLoader.load("https://ajilpappachan.github.com/Thee-Js/assets/image.jpg", function (texture) {
+textureLoader.load("https://github.com/ajilpappachan/Three-Js/blob/dab47bd0b785824d2807ab62aa10cd6fe8294ca6/assets/image.jpg", function (texture) {
 	texture.encoding = THREE.sRGBEncoding;
 	texture.mapping = THREE.EquirectangularReflectionMapping;
 
