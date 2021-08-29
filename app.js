@@ -1,5 +1,5 @@
-import * as THREE from "https://raw.githubusercontent.com/ajilpappachan/Three-Js/skyboxAndParticles/build/three.module.js";
-import { OrbitControls } from "https://raw.githubusercontent.com/ajilpappachan/Three-Js/skyboxAndParticles/jsm/controls/OrbitControls.js";
+import * as THREE from "https://ajilpappachan.github.io/Three-Js/build/three.module.js";
+import { OrbitControls } from "https://ajilpappachan.github.io/Three-Js/jsm/controls/OrbitControls.js";
 
 class App {
 	constructor() {
