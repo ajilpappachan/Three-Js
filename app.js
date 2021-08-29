@@ -1,5 +1,5 @@
-import * as THREE from "https://ajilpappachan.github.io/Three-Js/build/three.module.js";
-import { OrbitControls } from "https://ajilpappachan.github.io/Three-Js/jsm/controls/OrbitControls.js";
+import * as THREE from "/Three-Js/build/three.module.js";
+import { OrbitControls } from "/Three-Js/jsm/controls/OrbitControls.js";
 
 class App {
 	constructor() {
