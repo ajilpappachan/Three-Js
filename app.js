@@ -1,5 +1,5 @@
-import * as THREE from "https://github.com/ajilpappachan/Three-Js/blob/4ee1bc40e744a785badf1373953277ceeef64ac8/build/three.module.js";
-import { OrbitControls } from "https://github.com/ajilpappachan/Three-Js/blob/4ee1bc40e744a785badf1373953277ceeef64ac8/jsm/controls/OrbitControls.js";
+import * as THREE from "https://raw.githubusercontent.com/ajilpappachan/Three-Js/skyboxAndParticles/build/three.module.js";
+import { OrbitControls } from "https://raw.githubusercontent.com/ajilpappachan/Three-Js/skyboxAndParticles/jsm/controls/OrbitControls.js";
 
 class App {
 	constructor() {
@@ -35,7 +35,7 @@ class App {
 		// invert the geometry on the x-axis so that all of the faces point inward
 		skyGeometry.scale(-1, 1, 1);
 
-		const skyTexture = new THREE.TextureLoader().load("https://res.cloudinary.com/ajilp/image/upload/v1630238094/Three%20Js/image_ergcna.jpg");
+		const skyTexture = new THREE.TextureLoader().load("https://raw.githubusercontent.com/ajilpappachan/Three-Js/skyboxAndParticles/assets/image.jpg");
 		const skyMaterial = new THREE.MeshBasicMaterial({ map: skyTexture });
 
 		const skybox = new THREE.Mesh(skyGeometry, skyMaterial);
@@ -47,11 +47,11 @@ class App {
 
 		const textureLoader = new THREE.TextureLoader();
 
-		const sprite1 = textureLoader.load("https://res.cloudinary.com/ajilp/image/upload/v1630238092/Three%20Js/snowflake2_nyi7ip.png");
-		const sprite2 = textureLoader.load("https://res.cloudinary.com/ajilp/image/upload/v1630238092/Three%20Js/snowflake5_izf3lz.png");
-		const sprite3 = textureLoader.load("https://res.cloudinary.com/ajilp/image/upload/v1630238092/Three%20Js/snowflake1_jzvbk4.png");
-		const sprite4 = textureLoader.load("https://res.cloudinary.com/ajilp/image/upload/v1630238092/Three%20Js/snowflake3_s7zrzx.png");
-		const sprite5 = textureLoader.load("https://res.cloudinary.com/ajilp/image/upload/v1630238092/Three%20Js/snowflake4_egus3p.png");
+		const sprite1 = textureLoader.load("https://raw.githubusercontent.com/ajilpappachan/Three-Js/skyboxAndParticles/assets/snowflake1.png");
+		const sprite2 = textureLoader.load("https://raw.githubusercontent.com/ajilpappachan/Three-Js/skyboxAndParticles/assets/snowflake2.png");
+		const sprite3 = textureLoader.load("https://raw.githubusercontent.com/ajilpappachan/Three-Js/skyboxAndParticles/assets/snowflake3.png");
+		const sprite4 = textureLoader.load("https://raw.githubusercontent.com/ajilpappachan/Three-Js/skyboxAndParticles/assets/snowflake4.png");
+		const sprite5 = textureLoader.load("https://raw.githubusercontent.com/ajilpappachan/Three-Js/skyboxAndParticles/assets/snowflake5.png");
 
 		for (let i = 0; i < 10000; i++) {
 			const x = Math.random() * 2000 - 1000;
