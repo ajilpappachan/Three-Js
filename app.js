@@ -1,5 +1,5 @@
 import * as THREE from "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js";
-import { OrbitControls } from "https://cdn.jsdelivr.net/npm/@workswithweb/threejs-orbit-controls@0.0.3/dist/orbit-controls.esm.js";
+import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three-orbit-controls@82.1.0/index.min.js";
 
 class App {
 	constructor() {
