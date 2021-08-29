@@ -1,5 +1,5 @@
-import * as THREE from "./build/three.module.js";
-import { OrbitControls } from "./jsm/controls/OrbitControls.js";
+import * as THREE from "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js";
+import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three-orbitcontrols@2.110.3/OrbitControls.js";
 
 class App {
 	constructor() {
@@ -35,7 +35,7 @@ class App {
 		// invert the geometry on the x-axis so that all of the faces point inward
 		skyGeometry.scale(-1, 1, 1);
 
-		const skyTexture = new THREE.TextureLoader().load("assets/image.jpg");
+		const skyTexture = new THREE.TextureLoader().load("https://res.cloudinary.com/ajilp/image/upload/v1630238094/Three%20Js/image_ergcna.jpg");
 		const skyMaterial = new THREE.MeshBasicMaterial({ map: skyTexture });
 
 		const skybox = new THREE.Mesh(skyGeometry, skyMaterial);
@@ -47,11 +47,11 @@ class App {
 
 		const textureLoader = new THREE.TextureLoader();
 
-		const sprite1 = textureLoader.load("assets/snowflake1.png");
-		const sprite2 = textureLoader.load("assets/snowflake2.png");
-		const sprite3 = textureLoader.load("assets/snowflake3.png");
-		const sprite4 = textureLoader.load("assets/snowflake4.png");
-		const sprite5 = textureLoader.load("assets/snowflake5.png");
+		const sprite1 = textureLoader.load("https://res.cloudinary.com/ajilp/image/upload/v1630238092/Three%20Js/snowflake2_nyi7ip.png");
+		const sprite2 = textureLoader.load("https://res.cloudinary.com/ajilp/image/upload/v1630238092/Three%20Js/snowflake5_izf3lz.png");
+		const sprite3 = textureLoader.load("https://res.cloudinary.com/ajilp/image/upload/v1630238092/Three%20Js/snowflake1_jzvbk4.png");
+		const sprite4 = textureLoader.load("https://res.cloudinary.com/ajilp/image/upload/v1630238092/Three%20Js/snowflake3_s7zrzx.png");
+		const sprite5 = textureLoader.load("https://res.cloudinary.com/ajilp/image/upload/v1630238092/Three%20Js/snowflake4_egus3p.png");
 
 		for (let i = 0; i < 10000; i++) {
 			const x = Math.random() * 2000 - 1000;
